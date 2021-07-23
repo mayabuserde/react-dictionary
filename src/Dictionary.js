@@ -1,13 +1,14 @@
 import React, {useState} from "react";
 import axios from "axios";
+import Results from "./Results";
 
 export default function Dictionary() {
 
-    
+    let [results, setResults] = useState(null);
     let [keyword, setKeyword] = useState('');
     
     function handleResponse(response) {
-        console.log(response);
+        setResults(response.data[0]);
     }
     
     function search(event) {
@@ -27,7 +28,9 @@ export default function Dictionary() {
         <form className="d-flex" onSubmit={search}>
         <input className="form-control me-3" type="search" placeholder="Type a word..." onChange={updateKeyword} />
         <input type="submit" className="btn btn-outline-info" value="Search" />
-        </form></div>
+        </form>
+        <Results results={results}/>
+        </div>
        
     )
 }
