@@ -1,0 +1,27 @@
+.Phonetics {
+    margin-bottom: 10px;
+}
+
+.Phonetics a {
+    text-decoration: none;
+    border: 1px solid orchid;
+    padding: 8px 20px;
+    border-radius: 20px;
+    color: orchid;
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.Phonetics a:hover {
+   color: white;
+    background-color: orchid;
+    
+}
+
+.Phonetics p {
+    display: inline-block;
+    font-weight: bold;
+    opacity: 0.7;
+    font-size: 1.3rem;
+}

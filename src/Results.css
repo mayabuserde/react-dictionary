@@ -1,0 +1,9 @@
+.Results section {
+    text-align: left;
+}
+
+.Results h2 {
+font-size: 36px;
+text-transform: capitalize;
+margin-bottom: 10px;
+}

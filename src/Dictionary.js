@@ -2,6 +2,8 @@ import React, {useState} from "react";
 import axios from "axios";
 import Results from "./Results";
 
+import "./Dictionary.css"
+
 export default function Dictionary() {
 
     let [results, setResults] = useState(null);
@@ -23,14 +25,17 @@ export default function Dictionary() {
     }
     
     return (
-        <div className="Dictionary container p-3"><h1>Dictionary</h1>
-        <p>Which word are you looking for?</p>
-        <form className="d-flex" onSubmit={search}>
-        <input className="form-control me-3" type="search" placeholder="Type a word..." onChange={updateKeyword} />
-        <input type="submit" className="btn btn-outline-info" value="Search" />
-        </form>
-        <Results results={results}/>
-        </div>
-       
+        <div className="Dictionary">
+            <section>
+                <form onSubmit={search}>
+                <h1>Dictionary</h1>
+                <p>Which word are you looking for?</p>
+    
+                <input className="form-control me-3" type="search" placeholder="Type a word..." onChange={updateKeyword} />
+                </form>
+                <p className="hint">Try searching for: sunset, water, orchid</p>
+            </section>
+            <Results results={results}/>
+       </div>
     )
 }

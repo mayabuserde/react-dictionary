@@ -1,0 +1,17 @@
+.Synonyms {
+    list-style: none;
+    padding-left: 1rem;
+    padding-top: 10px;
+    
+}
+
+.Synonyms li {
+    display: inline-block;
+    padding-right: 10px;
+    
+}
+
+.Synonyms span {
+    padding-right: 10px;
+    color: orchid;
+}

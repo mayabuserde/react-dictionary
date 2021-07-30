@@ -4,7 +4,7 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App container shadow my-5 mx-auto">
+    <div className="App">
     <Dictionary />  
     
     </div>
