@@ -3,6 +3,7 @@ import axios from "axios";
 import Results from "./Results";
 import Photos from "./Photos";
 
+
 import "./Dictionary.css"
 
 export default function Dictionary() {
@@ -18,6 +19,7 @@ export default function Dictionary() {
     function handlePexelResponse(response) {
         setPhotos(response.data.photos);
     }
+
 
     function search(event) {
         event.preventDefault();
@@ -45,6 +47,7 @@ export default function Dictionary() {
             </section>
             <Results results={results}/>
             <Photos photos={photos} />
+            <footer>This project was built by <a href="https://mayabuserde.github.io/" target="_blank" rel="noreferrer">Maya Buser De</a>. It is open-sourced on <a href="https://github.com/mayabuserde/react-dictionary" target="_blank" rel="noreferrer">Github</a> and hosted on <a href="https://silly-franklin-8269d9.netlify.app/" target="_blank" rel="noreferrer">Netlify</a>.</footer>
        </div>
     )
 }

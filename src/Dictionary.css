@@ -26,3 +26,10 @@
   font-size: 0.85;
   opacity: 0.8;
 }
+
+.Dictionary footer {
+  max-width: 960px;
+  margin: 30px auto;
+  text-align: center;
+  font-size: .8rem;
+}
